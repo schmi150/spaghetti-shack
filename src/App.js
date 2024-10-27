@@ -8,6 +8,7 @@ import Locations from "./components/Locations.js";
 import Hiring from "./components/Hiring.js";
 import Franchising from "./components/Franchising.js";
 import Fundraisers from "./components/Fundraisers.js";
+import Cart from "./components/Cart.js";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/hiring" exact element={<Hiring />} />
           <Route path="/franchising" exact element={<Franchising />} />
           <Route path="/fundraisers" exact element={<Fundraisers />} />
+          <Route path="/cart" exact element={<Cart />} />
         </Routes>
       </div>
     </Router>

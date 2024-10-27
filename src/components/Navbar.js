@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../logo.svg";
@@ -7,7 +6,10 @@ function AppNavbar() {
   return (
     <div>
       <Navbar expand="lg" className="bg-myColor navbar-dark">
-        <Navbar.Brand as={Link} to="/Homepage">
+        <Navbar.Brand as={Link} to="/">
+          <img data-test="theLogo" src={logo} alt="logo" width="50" />
+        </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/cart">
           <img data-test="theLogo" src={logo} alt="logo" width="50" />
         </Navbar.Brand>
         <Navbar.Toggle
