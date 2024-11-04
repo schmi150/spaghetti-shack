@@ -8,7 +8,6 @@ const cartReducer = (state = [], action) => {
         menu_price: action.payload.menu_price,
       });
       state = temp_state;
-      console.log(state);
       return state;
     case "REMOVE_FROM_CART":
       state.splice(action.payload.index, 1);
