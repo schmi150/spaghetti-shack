@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../logo.svg";
+import cart_logo from "../shopping-cart-outline.svg";
 
 function AppNavbar() {
   return (
@@ -10,7 +11,7 @@ function AppNavbar() {
           <img data-test="theLogo" src={logo} alt="logo" width="50" />
         </Navbar.Brand>
         <Navbar.Brand as={Link} to="/cart">
-          <img data-test="theLogo" src={logo} alt="logo" width="50" />
+          <img data-test="theLogo" src={cart_logo} alt="logo" width="50" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

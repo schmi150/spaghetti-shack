@@ -7,18 +7,27 @@ function Cart() {
   const store = useStore();
   selector = store.getState().cart;
 
-  const card_number = "1234567890123456";
-  console.log(
-    card_number
-      .replace(/\D/g, "")
-      .replace(/(.{4})/g, "$1-")
-      .trim()
-      .slice(0, -1)
-  );
-
   function handleCheckout(e) {
     e.preventDefault();
-    console.log(e.target.elements.card_num.value);
+    console.log(e);
+  }
+
+  function handleCardNumChange(e) {
+    e.preventDefault();
+    const card = e.target.value;
+    const count = card.replaceAll("-", "").length;
+
+    if (isNaN(Number(card.charAt(card.length - 1)))) {
+      e.target.value = card.slice(0, -1);
+      return;
+    }
+    if (count >= 16) {
+      e.target.value = card.slice(0, 19);
+      return;
+    }
+    if (count % 4 === 0) {
+      e.target.value += "-";
+    }
   }
 
   return (
@@ -31,7 +40,11 @@ function Cart() {
       <Form onSubmit={handleCheckout}>
         <Form.Group controlId="card_num">
           <Form.Label>Card Number</Form.Label>
-          <Form.Control type="text" placeholder="xxxx-xxxx-xxxx-xxxx" />
+          <Form.Control
+            type="text"
+            placeholder="xxxx-xxxx-xxxx-xxxx"
+            onChange={handleCardNumChange}
+          />
         </Form.Group>
         <Form.Group controlId="card_cvv">
           <Form.Label>CVV</Form.Label>
