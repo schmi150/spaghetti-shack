@@ -18,7 +18,7 @@ function AppNavbar() {
           className="border-light float-end border border-2 mx-3"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto float-end text-end">
+          <Nav className="ms-auto float-middle text-middle">
             <Nav.Item
               as={Link}
               to="/"
