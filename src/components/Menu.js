@@ -507,18 +507,18 @@ function Menu() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const index = e.target.elements[0].name.substring(5).split(",");
-    //console.log(e.target.elements[0].name.substring(5));
-    dispatch(
-      addToCart({
-        menu_item:
-          menu_items.build_shack[0].item_choice[index[0]][index[1]].item,
-        menu_price:
-          menu_items.build_shack[0].item_choice[index[0]][index[1]].price,
-      })
-    );
+    // const index = e.target.elements[0].name.substring(5).split(",");
+    // //console.log(e.target.elements[0].name.substring(5));
+    // dispatch(
+    //   addToCart({
+    //     menu_item:
+    //       menu_items.build_shack[0].item_choice[index[0]][index[1]].item,
+    //     menu_price:
+    //       menu_items.build_shack[0].item_choice[index[0]][index[1]].price,
+    //   })
+    // );
 
-    selector = store.getState().cart;
+    // selector = store.getState().cart;
   };
   return (
     <div>
