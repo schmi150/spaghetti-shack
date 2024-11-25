@@ -43,14 +43,14 @@ function AppNavbar() {
             >
               Catering
             </Nav.Item>
-            <Nav.Item
+            {/* <Nav.Item
               as={Link}
               to="/specials"
               className="link-text"
               style={{ marginRight: 20 }}
             >
               Specials
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item
               as={Link}
               to="/locations"

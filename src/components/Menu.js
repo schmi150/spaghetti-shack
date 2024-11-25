@@ -139,7 +139,7 @@ function Menu() {
                     posButtonColorLight: "string",
                     posButtonColorDark: "string",
                     image: "string",
-                    price: 0,
+                    price: 8.99,
                     pricingStrategy: "BASE_PRICE",
                     pricingRules: [null],
                     isDeferred: true,
@@ -174,7 +174,7 @@ function Menu() {
                     posButtonColorLight: "string",
                     posButtonColorDark: "string",
                     image: "string",
-                    price: 0,
+                    price: 15.99,
                     pricingStrategy: "BASE_PRICE",
                     pricingRules: [null],
                     isDeferred: true,
@@ -209,7 +209,132 @@ function Menu() {
                     posButtonColorLight: "string",
                     posButtonColorDark: "string",
                     image: "string",
-                    price: 0,
+                    price: 27.99,
+                    pricingStrategy: "BASE_PRICE",
+                    pricingRules: [null],
+                    isDeferred: true,
+                    isDiscountable: true,
+                    salesCategory: {
+                      name: null,
+                      guid: null,
+                    },
+                    taxInfo: [null],
+                    taxInclusion: "TAX_INCLUDED",
+                    itemTags: [null],
+                    plu: "string",
+                    sku: "string",
+                    calories: 0,
+                    contentAdvisories: {
+                      alcohol: null,
+                    },
+                    unitOfMeasure: "NONE",
+                    portions: [null],
+                    prepTime: 0,
+                    prepStations: [null],
+                    modifierGroupReferences: [null],
+                  },
+                ],
+              },
+              {
+                name: "1. PICK YOUR SIZE",
+                guid: "string",
+                multiLocationId: "string",
+                masterId: 0,
+                description: "string",
+                posName: "string",
+                posButtonColorLight: "string",
+                posButtonColorDark: "string",
+                image: "string",
+                itemTags: [
+                  {
+                    name: "string",
+                    guid: "string",
+                  },
+                ],
+                menuGroups: [{}],
+                menuItems: [
+                  {
+                    name: "Small Shack",
+                    kitchenName: "string",
+                    guid: "A1",
+                    multiLocationId: "string",
+                    masterId: 0,
+                    description: "string",
+                    posName: "string",
+                    posButtonColorLight: "string",
+                    posButtonColorDark: "string",
+                    image: "string",
+                    price: 8.99,
+                    pricingStrategy: "BASE_PRICE",
+                    pricingRules: [null],
+                    isDeferred: true,
+                    isDiscountable: true,
+                    salesCategory: {
+                      name: null,
+                      guid: null,
+                    },
+                    taxInfo: [null],
+                    taxInclusion: "TAX_INCLUDED",
+                    itemTags: [null],
+                    plu: "string",
+                    sku: "string",
+                    calories: 0,
+                    contentAdvisories: {
+                      alcohol: null,
+                    },
+                    unitOfMeasure: "NONE",
+                    portions: [null],
+                    prepTime: 0,
+                    prepStations: [null],
+                    modifierGroupReferences: [null],
+                  },
+                  {
+                    name: "Mid Shack",
+                    kitchenName: "string",
+                    guid: "A2",
+                    multiLocationId: "string",
+                    masterId: 0,
+                    description: "string",
+                    posName: "string",
+                    posButtonColorLight: "string",
+                    posButtonColorDark: "string",
+                    image: "string",
+                    price: 15.99,
+                    pricingStrategy: "BASE_PRICE",
+                    pricingRules: [null],
+                    isDeferred: true,
+                    isDiscountable: true,
+                    salesCategory: {
+                      name: null,
+                      guid: null,
+                    },
+                    taxInfo: [null],
+                    taxInclusion: "TAX_INCLUDED",
+                    itemTags: [null],
+                    plu: "string",
+                    sku: "string",
+                    calories: 0,
+                    contentAdvisories: {
+                      alcohol: null,
+                    },
+                    unitOfMeasure: "NONE",
+                    portions: [null],
+                    prepTime: 0,
+                    prepStations: [null],
+                    modifierGroupReferences: [null],
+                  },
+                  {
+                    name: "Full Shack",
+                    kitchenName: "string",
+                    guid: "A3",
+                    multiLocationId: "string",
+                    masterId: 0,
+                    description: "string",
+                    posName: "string",
+                    posButtonColorLight: "string",
+                    posButtonColorDark: "string",
+                    image: "string",
+                    price: 27.99,
                     pricingStrategy: "BASE_PRICE",
                     pricingRules: [null],
                     isDeferred: true,
@@ -241,267 +366,6 @@ function Menu() {
         ],
       },
     ],
-    modifierGroupReferences: {
-      identifier: 0,
-      property1: {
-        name: "string",
-        guid: "string",
-        referenceId: 0,
-        multiLocationId: "string",
-        masterId: 0,
-        posName: "string",
-        posButtonColorLight: "string",
-        posButtonColorDark: "string",
-        pricingStrategy: "string",
-        pricingRules: [
-          {
-            timeSpecificPricingRules: [
-              {
-                timeSpecificPrice: 0,
-                basePrice: 0,
-                schedule: [null],
-              },
-            ],
-            sizeSpecificPricingGuid: "string",
-            sizeSequencePricingRules: [
-              {
-                sizeName: "string",
-                sizeGuid: "string",
-                sequencePrices: [null],
-              },
-            ],
-          },
-        ],
-        defaultOptionsChargePrice: "NO",
-        defaultOptionsSubstitutionPricing: "NO",
-        minSelections: 0,
-        maxSelections: 0,
-        requiredMode: "REQUIRED",
-        isMultiSelect: true,
-        preModifierGroupReference: 0,
-        modifierOptionReferences: [0],
-      },
-      property2: {
-        name: "string",
-        guid: "string",
-        referenceId: 0,
-        multiLocationId: "string",
-        masterId: 0,
-        posName: "string",
-        posButtonColorLight: "string",
-        posButtonColorDark: "string",
-        pricingStrategy: "string",
-        pricingRules: [
-          {
-            timeSpecificPricingRules: [
-              {
-                timeSpecificPrice: 0,
-                basePrice: 0,
-                schedule: [null],
-              },
-            ],
-            sizeSpecificPricingGuid: "string",
-            sizeSequencePricingRules: [
-              {
-                sizeName: "string",
-                sizeGuid: "string",
-                sequencePrices: [null],
-              },
-            ],
-          },
-        ],
-        defaultOptionsChargePrice: "NO",
-        defaultOptionsSubstitutionPricing: "NO",
-        minSelections: 0,
-        maxSelections: 0,
-        requiredMode: "REQUIRED",
-        isMultiSelect: true,
-        preModifierGroupReference: 0,
-        modifierOptionReferences: [0],
-      },
-    },
-    modifierOptionReferences: {
-      identifier: 0,
-      property1: {
-        referenceId: 0,
-        name: "string",
-        kitchenName: "string",
-        guid: "string",
-        multiLocationId: "string",
-        masterId: 0,
-        description: "string",
-        posName: "string",
-        posButtonColorLight: "string",
-        posButtonColorDark: "string",
-        prepStations: ["string"],
-        image: "string",
-        price: 0,
-        pricingStrategy: "string",
-        pricingRules: [
-          {
-            timeSpecificPricingRules: [
-              {
-                timeSpecificPrice: 0,
-                basePrice: 0,
-                schedule: [null],
-              },
-            ],
-            sizeSpecificPricingGuid: "string",
-            sizeSequencePricingRules: [
-              {
-                sizeName: "string",
-                sizeGuid: "string",
-                sequencePrices: [null],
-              },
-            ],
-          },
-        ],
-        salesCategory: {
-          name: "string",
-          guid: "string",
-        },
-        taxInfo: ["string"],
-        modifierOptionTaxInfo: {
-          taxRateGuids: ["string"],
-          overrideItemTaxRates: true,
-        },
-        itemTags: [
-          {
-            name: "string",
-            guid: "string",
-          },
-        ],
-        plu: "string",
-        sku: "string",
-        calories: 0,
-        contentAdvisories: {
-          alcohol: {
-            containsAlcohol: "YES",
-          },
-        },
-        unitOfMeasure: "NONE",
-        isDefault: true,
-        allowsDuplicates: true,
-        portions: [
-          {
-            name: "string",
-            guid: "string",
-            modifierGroupReferences: [0],
-          },
-        ],
-        prepTime: 0,
-        modifierGroupReferences: [0],
-      },
-      property2: {
-        referenceId: 0,
-        name: "string",
-        kitchenName: "string",
-        guid: "string",
-        multiLocationId: "string",
-        masterId: 0,
-        description: "string",
-        posName: "string",
-        posButtonColorLight: "string",
-        posButtonColorDark: "string",
-        prepStations: ["string"],
-        image: "string",
-        price: 0,
-        pricingStrategy: "string",
-        pricingRules: [
-          {
-            timeSpecificPricingRules: [
-              {
-                timeSpecificPrice: 0,
-                basePrice: 0,
-                schedule: [null],
-              },
-            ],
-            sizeSpecificPricingGuid: "string",
-            sizeSequencePricingRules: [
-              {
-                sizeName: "string",
-                sizeGuid: "string",
-                sequencePrices: [null],
-              },
-            ],
-          },
-        ],
-        salesCategory: {
-          name: "string",
-          guid: "string",
-        },
-        taxInfo: ["string"],
-        modifierOptionTaxInfo: {
-          taxRateGuids: ["string"],
-          overrideItemTaxRates: true,
-        },
-        itemTags: [
-          {
-            name: "string",
-            guid: "string",
-          },
-        ],
-        plu: "string",
-        sku: "string",
-        calories: 0,
-        contentAdvisories: {
-          alcohol: {
-            containsAlcohol: "YES",
-          },
-        },
-        unitOfMeasure: "NONE",
-        isDefault: true,
-        allowsDuplicates: true,
-        portions: [
-          {
-            name: "string",
-            guid: "string",
-            modifierGroupReferences: [0],
-          },
-        ],
-        prepTime: 0,
-        modifierGroupReferences: [0],
-      },
-    },
-    preModifierGroupReferences: {
-      identifier: 0,
-      property1: {
-        name: "string",
-        guid: "string",
-        multiLocationId: "string",
-        preModifiers: [
-          {
-            name: "string",
-            guid: "string",
-            multiLocationId: "string",
-            fixedPrice: 0,
-            multiplicationFactor: 0,
-            displayMode: "PREFIX",
-            posName: "string",
-            posButtonColorLight: "string",
-            posButtonColorDark: "string",
-          },
-        ],
-      },
-      property2: {
-        name: "string",
-        guid: "string",
-        multiLocationId: "string",
-        preModifiers: [
-          {
-            name: "string",
-            guid: "string",
-            multiLocationId: "string",
-            fixedPrice: 0,
-            multiplicationFactor: 0,
-            displayMode: "PREFIX",
-            posName: "string",
-            posButtonColorLight: "string",
-            posButtonColorDark: "string",
-          },
-        ],
-      },
-    },
   };
   console.log(toast_menu);
 
@@ -528,42 +392,49 @@ function Menu() {
           return (
             <div>
               <h2>{menu_build.name}</h2>
-              {/* {menu_build.item_choice.map((menuItem, i) => {
+              {menu_build.menuGroups.map((menu_groups, i) => {
                 return (
                   <div>
-                    <h3>{menu_cue[i]}</h3>
-                    {menuItem.map((item, j) => {
+                    <h3>{menu_groups.name}</h3>
+                    {menu_groups.menuGroups.map((menu_subGroups, i) => {
                       return (
-                        <Form onSubmit={handleClick} key={i + "," + j}>
-                          <Form.Group controlid={"menu_item_" + j}>
-                            <Row>
-                              <Col>
-                                <Form.Label>
-                                  <h4>
-                                    {item.item +
-                                      (item.price === undefined
-                                        ? ""
-                                        : " : " + item.price)}
-                                  </h4>
-                                </Form.Label>
-                              </Col>
+                        <div>
+                          <h3>{menu_subGroups.name}</h3>
+                          {menu_subGroups.menuItems.map((item, j) => {
+                            return (
+                              <Form onSubmit={handleClick} key={i + "," + j}>
+                                <Form.Group controlid={"menu_item_" + j}>
+                                  <Row>
+                                    <Col>
+                                      <Form.Label>
+                                        <h4>
+                                          {item.name +
+                                            (item.price === undefined
+                                              ? ""
+                                              : " : " + item.price)}
+                                        </h4>
+                                      </Form.Label>
+                                    </Col>
 
-                              <Col>
-                                <Button
-                                  type="submit"
-                                  name={"item_" + i + "," + j}
-                                >
-                                  Add to Cart
-                                </Button>
-                              </Col>
-                            </Row>
-                          </Form.Group>
-                        </Form>
+                                    <Col>
+                                      <Button
+                                        type="submit"
+                                        name={"item_" + i + "," + j}
+                                      >
+                                        Add to Cart
+                                      </Button>
+                                    </Col>
+                                  </Row>
+                                </Form.Group>
+                              </Form>
+                            );
+                          })}
+                        </div>
                       );
                     })}
                   </div>
                 );
-              })} */}
+              })}
             </div>
           );
         })}
