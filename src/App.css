@@ -54,6 +54,21 @@ h1 {
   align-items: center;
 }
 
+.accordion-button {
+  background-color: #ff4b34 !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+}
+
 .navbar-toggle-icon {
   background: transparent;
   border: none;

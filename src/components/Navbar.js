@@ -21,14 +21,6 @@ function AppNavbar() {
           <Nav className="ms-auto float-middle text-middle">
             <Nav.Item
               as={Link}
-              to="/"
-              className="link-text"
-              style={{ marginRight: 20 }}
-            >
-              Home
-            </Nav.Item>
-            <Nav.Item
-              as={Link}
               to="/menu"
               className="link-text "
               style={{ marginRight: 20 }}
