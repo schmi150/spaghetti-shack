@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../logo.svg";
 import cart_logo from "../shopping-cart-outline.svg";
+//import React, { useState } from "react";
 
 function AppNavbar() {
+  //const [expanded, setExpanded] = useState(false);
+
   return (
     <div>
-      <Navbar expand="lg" className="bg-myColor navbar-dark">
+      <Navbar className="bg-myColor navbar-dark" expand="lg" collapseOnSelect>
         <Navbar.Brand as={Link} to="/">
           <img data-test="theLogo" src={logo} alt="logo" width="50" />
         </Navbar.Brand>
@@ -19,62 +22,68 @@ function AppNavbar() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto float-middle text-middle">
-            <Nav.Item
+            <Nav.Link
               as={Link}
               to="/menu"
-              className="link-text "
+              className="link-text"
+              eventKey="1"
               style={{ marginRight: 20 }}
             >
               Menu
-            </Nav.Item>
-            <Nav.Item
+            </Nav.Link>
+            <Nav.Link
               as={Link}
               to="/catering"
               className="link-text"
+              eventKey="2"
               style={{ marginRight: 20 }}
             >
               Catering
-            </Nav.Item>
-            {/* <Nav.Item
+            </Nav.Link>
+            {/* <Nav.Link
               as={Link}
               to="/specials"
               className="link-text"
               style={{ marginRight: 20 }}
             >
               Specials
-            </Nav.Item> */}
-            <Nav.Item
+            </Nav.Link> */}
+            <Nav.Link
               as={Link}
               to="/locations"
               className="link-text"
+              eventKey="2"
               style={{ marginRight: 20 }}
             >
               Locations
-            </Nav.Item>
-            <Nav.Item
+            </Nav.Link>
+            <Nav.Link
               as={Link}
               to="/hiring"
               className="link-text"
+              eventKey="3"
               style={{ marginRight: 20 }}
             >
               Hiring
-            </Nav.Item>
-            <Nav.Item
+            </Nav.Link>
+            <Nav.Link
               as={Link}
               to="/franchising"
               className="link-text"
+              eventKey="4"
               style={{ marginRight: 20 }}
             >
               Franchising
-            </Nav.Item>
-            <Nav.Item
+            </Nav.Link>
+            <Nav.Link
               as={Link}
               to="/fundraisers"
               className="link-text"
+              eventKey="5"
               style={{ marginRight: 20 }}
             >
               Fundraisers
-            </Nav.Item>
+            </Nav.Link>
 
             {/* <Nav.Link as={Link} to="/" className="text-white">
                 Home

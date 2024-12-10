@@ -10,7 +10,15 @@ function Menu() {
   const store = useStore();
   // cont[(index, setIndex)] = useState("");
 
-  console.log(toast_menu);
+  const stringName = "property1";
+  console.log(toast_menu.modifierOptionReferences[stringName]);
+  const ref_option = [
+    {
+      [stringName]: "Property",
+    },
+  ];
+  ref_option.push({ ["property2"]: "Property2" });
+  console.log(ref_option);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -35,49 +43,44 @@ function Menu() {
           return (
             <div>
               <h2>{menu_build.name}</h2>
-              {/* {menu_build.menuGroups.map((menu_groups, i) => {
+              {menu_build.menuGroups.map((menu_groups, i) => {
                 return (
                   <div>
                     <h3>{menu_groups.name}</h3>
-                    {menu_groups.menuGroups.map((menu_subGroups, i) => {
+                    {menu_groups.menuItems.map((item, j) => {
                       return (
                         <div>
-                          <h3>{menu_subGroups.name}</h3>
-                          {menu_subGroups.menuItems.map((item, j) => {
-                            return (
-                              <Form onSubmit={handleClick} key={i + "," + j}>
-                                <Form.Group controlid={"menu_item_" + j}>
-                                  <Row>
-                                    <Col>
-                                      <Form.Label>
-                                        <h4>
-                                          {item.name +
-                                            (item.price === undefined
-                                              ? ""
-                                              : " : " + item.price)}
-                                        </h4>
-                                      </Form.Label>
-                                    </Col>
+                          <Form onSubmit={handleClick} key={i + "," + j}>
+                            <Form.Group controlid={"menu_item_" + j}>
+                              <Row>
+                                <Col>
+                                  <Form.Label>
+                                    <h4>
+                                      {item.name +
+                                        (item.price === undefined
+                                          ? ""
+                                          : " : " + item.price)}
+                                    </h4>
+                                  </Form.Label>
+                                </Col>
 
-                                    <Col>
-                                      <Button
-                                        type="submit"
-                                        name={"item_" + i + "," + j}
-                                      >
-                                        Add to Cart
-                                      </Button>
-                                    </Col>
-                                  </Row>
-                                </Form.Group>
-                              </Form>
-                            );
-                          })}
+                                <Col>
+                                  <Button
+                                    type="submit"
+                                    name={"item_" + i + "," + j}
+                                  >
+                                    Add to Cart
+                                  </Button>
+                                </Col>
+                              </Row>
+                            </Form.Group>
+                          </Form>
                         </div>
                       );
                     })}
                   </div>
                 );
-              })} */}
+              })}
             </div>
           );
         })}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 
@@ -32,7 +33,9 @@ function Locations() {
                 <Accordion.Body>{loc.Phone}</Accordion.Body>
                 <Accordion.Body>{loc.Hours}</Accordion.Body>
                 <Accordion.Body>
-                  <Button>Order Online</Button>
+                  <Button as={Link} to="/menu">
+                    Order Online
+                  </Button>
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
